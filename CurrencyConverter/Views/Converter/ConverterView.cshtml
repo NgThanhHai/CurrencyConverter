@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "ConverterView";
+     }
+<h2> Converter </h2>
+
+<form action="/converter/convert" method="get">
+    USD: <input type="text" name="usd" /> <br /><br />
+    Rate: <input type="text" name="rate" /> <br /><br />
+    <input type="submit" value="Convert" /> <br /><br />
+
+</form>
+ VND:
+ @if (Model != null)
+{
+ @Model.result 
+}
